@@ -384,9 +384,13 @@ ul {
 
 .fullscreen {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  scroll-padding : 1000px;
 }
 
 .single-service-item {
