@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title -->
     <title>Accountant web page
-      
+
     </title>
 
     <!-- Bootstrap CSS -->
@@ -107,7 +107,7 @@
     </div>
     
     <!-- Service Area Start -->
-    <div id="services" class="discover-service-area pd fullscreen">
+    <div id="services" class="discover-service-area   pd fullscreen">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
@@ -254,7 +254,7 @@
 
 
     <!-- Team Area Start -->
-    <div id="team" class="discover-about-area   fullscreen ">
+    <div id="team"  style="background-color: white;" class="discover-about-area fullscreen ">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
@@ -391,7 +391,7 @@
     <!-- Team Area End -->
 
     <!-- About Area Start -->
-    <div id="about" class="discover-about-area pd-top-100 pd-bottom-80">
+     <div id="about" class="discover-about-area pd-top-100 pd-bottom-80">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
@@ -444,7 +444,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- About Area End -->
 
     <!-- Full Screen Video Area Start -->
@@ -760,34 +760,35 @@
 
     <!-- Bootstrap JS -->
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-
     <!-- Owl Carousel JS -->
     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-
     <!-- Mixitup JS -->
     <script
       type="text/javascript"
       src="assets/js/jquery.mixitup.min.js"
     ></script>
-
     <!-- Waypoints JS -->
     <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
-
     <!-- Counterup JS -->
     <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
-
     <!-- Slicknav JS -->
     <script
       type="text/javascript"
       src="assets/js/jquery.slicknav.min.js"
     ></script>
-
     <!-- Magnific Popup JS -->
     <script
       type="text/javascript"
       src="assets/js/jquery.magnific-popup.min.js"
     ></script>
-
+    <script>
+      $(document).ready(function() {
+    $("a[href*=#]").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    });
+});
+    </script>
     <!-- Active JS -->
     <script type="text/javascript" src="assets/js/active.js"></script>
   </body>
