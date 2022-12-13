@@ -44,6 +44,8 @@ body {
   font-size: 15px;
   line-height: 26px;
   --accent: #f41c54;
+  /* --accent: #4Fa4f4/; */
+  /* --accent: #008fff; */
 }
 h1,
 h2,
@@ -72,6 +74,9 @@ ul {
 }
 .pd {
   padding: 80px 0;
+}
+.pd-block-40 {
+  padding: 40px 0;
 }
 .pd-top-80 {
   padding-top: 80px;
@@ -202,9 +207,13 @@ ul {
   display: inline-block;
   position: relative;
 }
-.mainmenu ul > li.active > a,
+.mainmenu ul > li > a.active ,
 .mainmenu ul li a:hover {
   color: var(--accent);
+}
+.active:active{
+  color: var(--accent);
+
 }
 
 .mainmenu ul li a {
@@ -1132,7 +1141,8 @@ div.progress {
 .contact-form input[type="email"],
 .contact-form textarea {
   border: 1px solid #ddd;
-  color: #999999;
+  color: #000;
+  font-weight: 600;
   padding: 8px 15px;
   width: 100%;
 }
@@ -1221,4 +1231,15 @@ div.progress {
 }
 .footer-widgets {
   padding: 70px 0;
+}
+
+
+.header-area{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
