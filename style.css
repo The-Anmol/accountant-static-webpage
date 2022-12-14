@@ -13,7 +13,7 @@ body {
   font-size: 15px;
   line-height: 26px;
   max-width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
   /* --accent: #f41c54; */
   /* --accent: #4Fa4f4; */
   /* --accent: #008fff; */
